@@ -60,7 +60,7 @@ public class FortuneTeller {
 		}
 		
 		
-		String transport = "car";
+		String transport = " ";
 
 		switch (favColor.toLowerCase()) {
 		case "red":
@@ -92,7 +92,7 @@ public class FortuneTeller {
 
 		System.out.println("How many siblings do you have?");
 		int siblings = input.nextInt();
-		String vacationHome = "earth";
+		String vacationHome = " ";
 
 		switch (siblings) {
 		case 0:
