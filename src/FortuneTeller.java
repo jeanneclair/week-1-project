@@ -43,10 +43,31 @@ public class FortuneTeller {
 		
 		System.out.println("What is your favorite ROYGBIV color?");
 		String favColor = input.next();
+		String transport = "car";
+		
+		switch (favColor.toLowerCase()) {
+		case "red": transport = "minivan";
+			break;
+		case "orange": transport = "VW bus";
+			break;
+		case "yellow": transport = "taxi cab";
+			break;
+		case "green": transport = "hybrid car";
+			break;
+		case "blue": transport = "electric car";
+			break;
+		case "indigo": transport = "pickup truck";
+			break;
+		case "violet": transport = "sports car";
+			break;
+
+		default: transport = "clunker";
+			break;
+		}
 		
 		System.out.println("How many siblings do you have?");
 		int siblings = input.nextInt();
 		
-	System.out.println(firstName + " " + lastName  + " will retire in " + retirementAge + "years, with " + bankBalance + " in the bank");
+	System.out.println(firstName + " " + lastName  + " will retire in " + retirementAge + "years, with " + bankBalance + " in the bank, a vacation home in " + ", and travel by " + transport + ".");
 	}
 }
