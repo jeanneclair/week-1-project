@@ -25,6 +25,7 @@ public class FortuneTeller {
 
 		System.out.println("What is your birth month?");
 		int birthMonth = input.nextInt();
+		input.nextLine();
 		int bankBalance = 0;
 
 		switch (birthMonth) {
@@ -51,7 +52,14 @@ public class FortuneTeller {
 		}
 
 		System.out.println("What is your favorite ROYGBIV color?");
-		String favColor = input.next();
+		String favColor = input.nextLine();
+		
+		while(favColor.equals("help")) {
+			System.out.println("The ROYGBIV colors are red, orange, yellow, green, blue, indigo, and violet.");
+			favColor = input.nextLine();
+		}
+		
+		
 		String transport = "car";
 
 		switch (favColor.toLowerCase()) {
