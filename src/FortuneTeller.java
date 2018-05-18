@@ -14,6 +14,14 @@ public class FortuneTeller {
 		
 		System.out.println("How old are you?");
 		int age = input.nextInt();
+		int retirementAge = 0;
+		if (age % 2 == 0) {retirementAge = 20;
+			
+		} else {
+			retirementAge = 15;
+		}
+			
+		
 		
 		System.out.println("What is your birth month?");
 		int birthMonth = input.nextInt();
@@ -24,7 +32,6 @@ public class FortuneTeller {
 		System.out.println("How many siblings do you have?");
 		int siblings = input.nextInt();
 		
-		
-	}
+	
 
 }
