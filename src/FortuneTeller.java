@@ -8,9 +8,18 @@ public class FortuneTeller {
 
 		System.out.println("What is your first name?");
 		String firstName = input.nextLine();
+		
+		if (firstName.equals("quit")) {
+			System.out.println("Nobody likes a quitter. Ciao!");
+			System.exit(0);}
+		
 
 		System.out.println("What is your last name?");
 		String lastName = input.nextLine();
+		
+		if (lastName.equals("quit")) {
+			System.out.println("Nobody likes a quitter. Ciao!");
+			System.exit(0);}
 
 		System.out.println("How old are you?");
 		int age = input.nextInt();
@@ -59,6 +68,9 @@ public class FortuneTeller {
 			favColor = input.nextLine();
 		}
 		
+		if (favColor.equals("quit")) {
+			System.out.println("Nobody likes a quitter. Ciao!");
+			System.exit(0);}
 		
 		String transport = " ";
 
@@ -123,7 +135,9 @@ public class FortuneTeller {
 			break;
 		}
 
-		System.out.println(firstName + " " + lastName + " will retire in " + retirementAge + " years, with "
+		System.out.println(firstName + " " + lastName + " will retire in " + retirementAge + " years, with $"
 				+ bankBalance + " in the bank, a vacation home in " + vacationHome + ", and travel by " + transport + ".");
 	}
 }
+	
+
