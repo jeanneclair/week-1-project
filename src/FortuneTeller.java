@@ -8,18 +8,19 @@ public class FortuneTeller {
 
 		System.out.println("What is your first name?");
 		String firstName = input.nextLine();
-		
+
 		if (firstName.equals("quit")) {
 			System.out.println("Nobody likes a quitter. Ciao!");
-			System.exit(0);}
-		
+			System.exit(0);
+		}
 
 		System.out.println("What is your last name?");
 		String lastName = input.nextLine();
-		
+
 		if (lastName.equals("quit")) {
 			System.out.println("Nobody likes a quitter. Ciao!");
-			System.exit(0);}
+			System.exit(0);
+		}
 
 		System.out.println("How old are you?");
 		int age = input.nextInt();
@@ -60,18 +61,19 @@ public class FortuneTeller {
 			break;
 		}
 
-		System.out.println("What is your favorite ROYGBIV color?");
+		System.out.println("What is your favorite ROYGBIV color? Enter help for a list.");
 		String favColor = input.nextLine();
-		
-		while(favColor.equals("help")) {
+
+		while (favColor.equals("help")) {
 			System.out.println("The ROYGBIV colors are red, orange, yellow, green, blue, indigo, and violet.");
 			favColor = input.nextLine();
 		}
-		
+
 		if (favColor.equals("quit")) {
 			System.out.println("Nobody likes a quitter. Ciao!");
-			System.exit(0);}
-		
+			System.exit(0);
+		}
+
 		String transport = " ";
 
 		switch (favColor.toLowerCase()) {
@@ -123,8 +125,6 @@ public class FortuneTeller {
 			vacationHome = "Belize";
 
 			break;
-			
-	
 
 		default:
 			if (siblings >= 4) {
@@ -135,9 +135,7 @@ public class FortuneTeller {
 			break;
 		}
 
-		System.out.println(firstName + " " + lastName + " will retire in " + retirementAge + " years, with $"
-				+ bankBalance + " in the bank, a vacation home in " + vacationHome + ", and travel by " + transport + ".");
+		System.out.println(firstName + " " + lastName + " will retire in " + retirementAge + " years, with $" + bankBalance
+						+ " in the bank, a vacation home in " + vacationHome + ", and travel by " + transport + ".");
 	}
 }
-	
-
